@@ -1,0 +1,328 @@
+:root {
+  --background-color-nav: rgb(75, 4, 75);
+  --background-color-page: rgb(99, 28, 99);
+  --gap-items: 2rem;
+  --font-size: 1.5rem;
+  --font-color: white;
+  --border-radius: 10px;
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Importación de fuentes*/
+@font-face {
+  font-family: "Roboto";
+  src: url("/Assets/Fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Assets/Fonts/Montserrat/Montserrat-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  background-color: var(--background-color-page);
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--font-color);
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-size);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: var(--background-color-nav);
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: var(--gap-items);
+}
+
+.logo {
+  width: 20rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.eslogan {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+header > nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: auto;
+  list-style: none;
+  padding: 10px 0;
+}
+
+nav > ul > li {
+  font-size: 1.2rem;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: var(--font-color);
+  font-weight: bold;
+}
+
+#sobre-nosotros {
+  margin: 2rem;
+}
+
+#sobre-nosotros p {
+  max-width: 800px;
+  text-align: justify;
+  margin-bottom: 1rem;
+  font-size: 20px;
+}
+
+.h2-sobre-nosotros {
+  padding-top: 35px;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.tienda {
+  flex-wrap: wrap;
+  width: 600px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-left: 50px;
+}
+
+@media (max-width: 1175px) {
+  .tienda {
+    width: 450px;
+  }
+}
+
+@media (max-width: 885px) {
+  .tienda {
+    width: 350px;
+  }
+}
+
+.sobre-contenido {
+  display: flex;
+  gap: var(--gap-items);
+  align-items: flex-start;
+}
+
+#productos {
+  margin: 2rem;
+}
+
+#productos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  text-decoration: underline;
+}
+
+.productos-contenido img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.productos-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 350px;
+  gap: var(--gap-items);
+  align-items: center;
+}
+
+.productos-contenido figcaption {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.productos-contenido figure {
+  margin: 0;
+}
+
+.productos-contenido p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+#coleccion {
+  margin: 2rem;
+}
+
+#coleccion h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  margin-top: 200px;
+  text-decoration: underline;
+}
+
+.colección-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: 200px;
+  gap: var(--gap-items);
+  align-items: center;
+}
+
+@media (max-width: 1580px) {
+  .colección-contenido {
+    gap: 4rem;
+  }
+}
+
+.colección-contenido img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-top: 50px;
+}
+
+.colección-contenido article {
+  text-align: center;
+}
+.colección-contenido h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.info-adicional {
+  margin: 150px;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.info-adicional h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.info-adicional p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.info-adicional ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-left: 20px;
+}
+
+.info-adicional ul li {
+  margin-bottom: 0.5rem;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#contacto {
+  margin: 2rem;
+  margin-bottom: 150px;
+}
+
+#contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  gap: 0.5rem;
+}
+
+#contacto form input,
+#contacto form textarea {
+  padding: 0.5rem;
+  border-radius: var(--border-radius);
+  border: none;
+  font-size: 1rem;
+}
+
+#contacto button {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--background-color-nav);
+  color: var(--font-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 50%;
+}
+
+#contacto button:active {
+  transform: scale(0.98);
+}
+
+#contacto button:hover {
+  background-color: rgb(153, 9, 153);
+}
+
+footer {
+  background-color: var(--background-color-nav);
+  text-align: center;
+  padding: 1rem;
+  color: var(--font-color);
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  margin-top: 50px;
+  box-shadow: var(--shadow);
+}
+
+footer a {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
