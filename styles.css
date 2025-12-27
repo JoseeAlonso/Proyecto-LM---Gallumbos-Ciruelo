@@ -265,6 +265,11 @@ nav > ul > li > a {
   margin-bottom: 30px;
   text-decoration: underline;
 }
+#contacto label {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: var(--font-color);
+}
 
 #contacto form {
   display: flex;
